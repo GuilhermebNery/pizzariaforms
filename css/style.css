@@ -1,0 +1,96 @@
+body {
+    /* Reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* Padronização de cores e fonte */
+    font-family: 'Roboto', 'sans-serif';
+    
+    color: #fff;
+}
+
+.caixa {
+    align-items: center;
+    align-content: center;
+}
+
+/* .caixa img {
+
+}
+ */
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/Design\ sem\ nome.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.email input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 38px;
+    padding-left: 15px;
+    margin-bottom: 7px;
+    background-color: #292a38;
+    color: #96979e;
+}
+
+.password input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 38px;
+    padding-left: 15px;
+    background-color: #292a38;
+    color: #96979e;
+    margin-bottom: 7px;
+}
+
+.entrar input {
+    border-radius: 20px;
+    border: none;
+    background-color: #77c97c;
+    color: #1b1c30;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.entrar input:hover {
+    background-color: #59c961;
+}
+
+.entrar p a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+
+/* REGISTRO */
+
+.nome input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 38px;
+    padding-left: 15px;
+    margin-bottom: 7px;
+    background-color: #292a38;
+    color: #96979e;
+}
+
+.confirm input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 38px;
+    padding-left: 15px;
+    background-color: #292a38;
+    color: #96979e;
+}
