@@ -1,96 +1,84 @@
-body {
-    /* Reset */
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
-    /* Padronização de cores e fonte */
-    font-family: 'Roboto', 'sans-serif';
-    
-    color: #fff;
 }
 
-.caixa {
-    align-items: center;
-    align-content: center;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-/* .caixa img {
-
-}
- */
-#login {
-    text-align: center;
+/* FUNDO */
+.container {
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-image:url(../img/Design\ sem\ nome.png);
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(135deg, #1b1c30, #292a38);
 }
 
-.email input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 38px;
-    padding-left: 15px;
-    margin-bottom: 7px;
-    background-color: #292a38;
-    color: #96979e;
-}
-
-.password input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 38px;
-    padding-left: 15px;
-    background-color: #292a38;
-    color: #96979e;
-    margin-bottom: 7px;
-}
-
-.entrar input {
+/* CARD */
+.card {
+    background: #222336;
+    padding: 40px 30px;
     border-radius: 20px;
-    border: none;
-    background-color: #77c97c;
-    color: #1b1c30;
-    width: 130px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* LOGO */
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+/* TITULO */
+.card h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.card input {
+    width: 100%;
     height: 40px;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #2f3045;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.card input:focus {
+    border: 1px solid #77c97c;
+}
+
+/* BOTÃO */
+.card button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: #77c97c;
+    color: #1b1c30;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.entrar input:hover {
-    background-color: #59c961;
+.card button:hover {
+    background: #59c961;
 }
 
-.entrar p a{
-    text-decoration: none;
-    color: aquamarine;
-}
-
-
-/* REGISTRO */
-
-.nome input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 38px;
-    padding-left: 15px;
-    margin-bottom: 7px;
-    background-color: #292a38;
-    color: #96979e;
-}
-
-.confirm input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 38px;
-    padding-left: 15px;
-    background-color: #292a38;
-    color: #96979e;
+/* RESPONSIVO */
+@media (max-width: 400px) {
+    .card {
+        padding: 30px 20px;
+    }
 }
